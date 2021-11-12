@@ -1,0 +1,202 @@
+*{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+
+body {
+	background: radial-gradient(circle, #34444e 0%, rgba(148,187,233,1) 100%);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+.titol{
+    position: absolute;
+    top: 20px;
+    background-color: gainsboro;
+    align-items: center;
+    height: 8vh;
+}
+
+hr{
+    height: 30px;
+    width:  1px;    
+}
+
+h1, h2, h5{
+    padding: 3px 10px 3px 10px;
+}
+
+audio{
+    display: none;
+}
+
+video{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+    border: 8px #34444e solid;
+}
+
+#container{
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+    background-color: #67a0a7;
+    margin: auto;
+    padding: 20px;
+}
+
+#sliderV{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #34444e;
+    padding: 10px;
+    margin: 5px;
+}
+
+.slider {
+    opacity: 0.7;
+    border-radius: 50px;
+}
+
+label{
+    justify-content: flex-end;
+    color: gainsboro;
+    padding: 5px;
+}
+
+input{
+    margin: 5px;
+    color: #34444e;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    background-color: lightpink;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.botons{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 60vh;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: #34444e;
+    padding: 20px;
+    margin: 5px;
+}
+
+.boto{
+    width: 5vw;
+    height: 10vh;
+    background-color: #4c4525;
+    border-radius: 25px; 
+    margin: 10px;
+    opacity: 1;
+    box-shadow: none;
+}
+
+.boto:hover {
+    box-shadow: 0 0 5px 5px #67a0a7;
+  }
+
+.botov{
+    background-color: lightcoral;
+}
+
+.botor{
+    background-color: lightpink;
+}
+
+.botog{
+    background-color: lightgoldenrodyellow;
+}
+
+.botove{
+    background-color: lightgreen;
+}
+
+.botob{
+    background-color: lightskyblue;
+}
+
+.botom{
+    background-color: lightseagreen;
+}
+
+.botot{
+    background-color: lightsalmon;
+}
+
+.botobl{
+    background-color: lightsteelblue;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+    #container {
+    flex-direction: column;
+  }
+    .titol{
+        display: none;
+    }
+    video{
+        width: 30vw;
+    }
+    #sliderV{
+        height: 20vh;
+        width: 30vw;
+        font-size: 10px;
+    }
+    input{
+        width: 30vw;
+        height: 0.5vh;
+    
+    }
+    .botons{
+        width: 30vw;
+        height: 30vh;
+    }
+    .boto{
+        width: 4vw;
+        height: 1vh;
+    }
+}
